@@ -1,4 +1,4 @@
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { User, Basket } = require("../models/models");
 const ApiError = require("../error/ApiError");
@@ -52,11 +52,8 @@ class UserController {
   }
 
   async checkAuth(req, res, next) {
-    const query = req.query;
-    if (!query.id) {
-      return next(ApiError.badRequest("Ошибка"));
-    }
-    return res.json(query.id);
+    const token = generateToken(req.user.id,req.user.email,req.user.role)
+    return res.json({token})
   }
 }
 
