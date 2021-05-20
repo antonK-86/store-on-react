@@ -1,0 +1,14 @@
+.navbar-brand{
+    color:rgb(243, 243, 240);
+    text-transform: uppercase;
+    margin-right: 2rem;
+}
+
+.nav-link{
+    margin-left: 2rem;
+    color:rgb(243, 243, 240)
+}
+
+.nav-link:hover{
+    color:rgb(221, 221, 221)
+}

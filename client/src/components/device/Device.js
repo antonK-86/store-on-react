@@ -1,11 +1,11 @@
 import React from "react"
 
-const Shop = ()=>{
+const Device = ()=>{
   return (
     <div>
-      Shop page
+     Device
     </div>
   );
 }
 
-export default Shop;
+export default Device;

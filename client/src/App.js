@@ -1,15 +1,15 @@
-import React from "react"
+import React from "react";
 import { BrowserRouter } from "react-router-dom";
+import NavBar from "./components/navbar/NavBar";
 import AppRouter from "./components/router/AppRouter";
 
-const App = ()=>{
+const App = () => {
   return (
     <BrowserRouter>
-      <AppRouter>
-        
-      </AppRouter>
+      <NavBar />
+      <AppRouter/>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
