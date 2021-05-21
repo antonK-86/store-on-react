@@ -10,7 +10,7 @@ const NavBar = () => {
     <NavWrap>
       <Container>
         <NavGroup>
-          <NavLink to={"/"} class="navbar-brand">
+          <NavLink to={"/"} className="navbar-brand">
             ShopName
           </NavLink>
           <NavGroup>
@@ -28,11 +28,18 @@ const NavBar = () => {
         </NavGroup>
 
         <NavGroup>
-        <NavLink to={"/basket"} className="nav-link" activeClassName="active">
+          <NavLink to={"/basket"} className="nav-link" activeClassName="active">
             Basket
           </NavLink>
           <NavLink to={"/login"} className="nav-link" activeClassName="active">
             Sign In
+          </NavLink>
+          <NavLink
+            to={"/registration"}
+            className="nav-link"
+            activeClassName="active"
+          >
+            Sign Up
           </NavLink>
           <NavLink
             to={"/registration"}
