@@ -3,9 +3,13 @@ import WrapVh from "../../wrap/WrapVh";
 import Registration from "./Registration";
 
 const RegContainer = () => {
+  const handleSubmit = (e) => {
+    console.log("Submit");
+  };
+
   return (
     <WrapVh>
-      <Registration />
+      <Registration onSubmit={handleSubmit} />
     </WrapVh>
   );
 };

@@ -63,6 +63,14 @@
   color: #414848;
 }
 
+.input-error input {
+  border: 1px solid #b42f32;
+}
+
+.field-error {
+  color: #b42f32;
+}
+
 .form-footer {
   padding: 15px 20px;
   display: flex;
